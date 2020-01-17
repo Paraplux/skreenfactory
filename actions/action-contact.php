@@ -1,7 +1,7 @@
 <?php 
 
 
-$json = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdY0cwUAAAAAMzi8-IDQ0GTmTFWUjVh_WMGBbgs&response=' . $_POST['g-recaptcha-response']);
+$json = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=SECRETKEY&response=' . $_POST['g-recaptcha-response']);
 
 $captcha = json_decode($json,true);
 
