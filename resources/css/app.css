@@ -14,7 +14,7 @@ strong {
     color: #505050;
 }
 hr.yellow {
-    margin: 0 auto;
+    margin: 3rem auto;
     width: 30%;
     height: .5rem;
     background: #FFCC00;
@@ -715,6 +715,17 @@ hr.yellow {
 
 /* ANCHOR CGU */
 
+.cgu-page .mentions {
+    width: 80%;
+    margin: auto;
+    font-family: "Roboto Slab", serif;
+    color: #505050;
+    margin-bottom: 3rem;
+}
+
+.cgu-page p {
+    font-size: 0.8rem;
+}
 
 
         /* SECTION MEDIA QUERIES */
@@ -884,10 +895,16 @@ hr.yellow {
         width: 100%;
     }
     
-    .blockquotes:nth-of-type(2) .quote {
+    .home-page .blockquotes:nth-of-type(2n) .quote {
         order: 2;
     }
-    .blockquotes:nth-of-type(2) .thumb {
+    .home-page .blockquotes:nth-of-type(2n) .thumb {
+        order: 1;
+    }
+    .expertises-page .blockquotes:nth-of-type(1n) .quote {
+        order: 2;
+    }
+    .expertises-page .blockquotes:nth-of-type(1n) .thumb {
         order: 1;
     }
     .blockquotes .quote {
@@ -930,8 +947,16 @@ hr.yellow {
     }
     .contact-form p {
         width: 90%;
+        text-align: justify;
     }
     .contact-page form {
         width: 90%;
+    }
+    .cgu-page .mentions {
+        width: 95%;
+    }
+    
+    .cgu-page p {
+        font-size: 0.8rem;
     }
 }
