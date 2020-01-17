@@ -12,14 +12,14 @@ const debounce = function(callback, delay){
         clearTimeout(timer);
         timer = setTimeout(function(){
             callback.apply(context, args);
-        }, delay)
+        }, delay);
     }
 }
 
 
 const navbar = document.querySelector(".navbar");
 const navbarLogo = document.querySelector(".navbar .logo");
-let lastScrollTop = 0
+let lastScrollTop = 0;
 window.addEventListener("scroll", debounce(function() {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     if(window.pageYOffset <= 150) {
@@ -32,7 +32,7 @@ window.addEventListener("scroll", debounce(function() {
         navbar.classList.add("down");
         navbarLogo.setAttribute("src", "../resources/images/logo-s.png");
     }
-    lastScrollTop = st
+    lastScrollTop = st;
 }, false));
 
 if(window.pageYOffset <= 150) {
@@ -53,31 +53,31 @@ navbarIcon.addEventListener("click", function(e) {
     e.preventDefault();
     sidebar.classList.toggle("active");
     siteCache.classList.toggle("active");
-})
+});
 siteCache.addEventListener("click", function(e) {
     e.preventDefault();
     sidebar.classList.toggle("active");
     siteCache.classList.toggle("active");
-})
+});
 
 
 document.querySelectorAll(".footer .icons").forEach(function(element){
     element.addEventListener("mouseenter", function(e){
         var path = this.querySelector("object").getSVGDocument().querySelectorAll("path");
         path.forEach(function(eachPath){
-            eachPath.setAttribute("fill", "#FFCC00")
+            eachPath.setAttribute("fill", "#FFCC00");
             eachPath.style.cursor = "pointer";
-        })
-    })
-})
+        });
+    });
+});
 document.querySelectorAll(".footer .icons").forEach(function(element){
     element.addEventListener("mouseleave", function(e){
         var path = this.querySelector("object").getSVGDocument().querySelectorAll("path");
         path.forEach(function(eachPath){
-            eachPath.setAttribute("fill", "#808080")
-        })
-    })
-})
+            eachPath.setAttribute("fill", "#808080");
+        });
+    });
+});
 
 const dynamicPlaceholders = function(className) {
     const placeholders = document.querySelectorAll(className);
@@ -103,4 +103,4 @@ const dynamicPlaceholders = function(className) {
     });
 }
 
-dynamicPlaceholders(".placeholder")
+dynamicPlaceholders(".placeholder");

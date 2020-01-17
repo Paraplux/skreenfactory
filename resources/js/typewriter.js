@@ -3,8 +3,8 @@
 /*Create a div with a specific class*/
 function createDivWithClass(className) {
     const div = document.createElement("div")
-    div.setAttribute("class", className)
-    return div
+    div.setAttribute("class", className);
+    return div;
 }
 
 /**
@@ -18,42 +18,42 @@ function typewritter (speed) {
 
 
     //HTML Elements
-    const typewriterElem = document.querySelector(".typewriter")
-    const typewriterParent = typewriterElem.parentElement
-    const typewriterContainer = createDivWithClass("typewriter-container")
+    const typewriterElem = document.querySelector(".typewriter");
+    const typewriterParent = typewriterElem.parentElement;
+    const typewriterContainer = createDivWithClass("typewriter-container");
 
     //Variables
-    const string = typewriterElem.innerHTML
-    const stringByWords = string.split(" ")
+    const string = typewriterElem.innerHTML;
+    const stringByWords = string.split(" ");
 
     //Setting the container
-    typewriterParent.insertBefore(typewriterContainer, typewriterElem)
+    typewriterParent.insertBefore(typewriterContainer, typewriterElem);
 
     //Putting each word in each div.word
     stringByWords.forEach(function (word) {
         //Creating the div.word
-        wordDiv = createDivWithClass("word")
+        let wordDiv = createDivWithClass("word");
         //Insert the word in the div.word
-        typewriterContainer.appendChild(wordDiv).innerHTML = word
+        typewriterContainer.appendChild(wordDiv).innerHTML = word;
     })
 
     //Creating div.letter for each cut word 
     document.querySelectorAll(".word").forEach(function (parent) {
         //Cutting the word
-        let letters = parent.innerHTML.split("")
+        let letters = parent.innerHTML.split("");
         //Removing the word himself
-        parent.innerHTML = ""
+        parent.innerHTML = "";
         //Putting each letter in div.letter in each div.word
         letters.forEach(function (child) {
             //Creating the div.letter
-            letterDiv = createDivWithClass("letter")
+            letterDiv = createDivWithClass("letter");
             //Insert the letter in the div.letter
-            parent.appendChild(letterDiv).innerHTML = child
-        })
-    })
+            parent.appendChild(letterDiv).innerHTML = child;
+        });
+    });
 
     //Removing the div.typewriter
-    typewriterElem.remove()
+    typewriterElem.remove();
 
 
 
@@ -64,16 +64,16 @@ function typewritter (speed) {
     /* Display flex */
     document.querySelectorAll(".letter").forEach(function (letter, index) {
         setTimeout(() => {
-            letter.style.display = "block"
-            letter.style.borderRight = "4px solid #FFCC00"
-        }, speed * index)
+            letter.style.display = "block";
+            letter.style.borderRight = "4px solid #FFCC00";
+        }, speed * index);
         setTimeout(() => {
-            letter.style.borderRight = "4px solid transparent"
-        }, speed * (index + 1))
+            letter.style.borderRight = "4px solid transparent";
+        }, speed * (index + 1));
     })
     setTimeout(() => {
         document.querySelector(".word:last-of-type").style.animationPlayState = "running"
     }, speed * document.querySelectorAll(".letter").length);
 }
 
-typewritter(100)
+typewritter(100);
