@@ -15,6 +15,7 @@ require_once '../components/header.php'; ?>
     </div>
     <div class="contact-form">
             <p>N'hésitez pas à prendre contact, nous répondons à toutes les demandes, et nous sommes ouverts à tous les projets. Remplissez ce formulaire et laissez nous vous guider. Si ce n'est pas déjà fait jeter un oeil à nos <a target="_blank" href="./expertises.php"><strong>compétences</strong></a> ou encore à nos <a target="_blank" href="./travaux.php"><strong>travaux</strong>.</a></p>
+            <hr class="yellow">
             <div class="feedbacks">
                 <?= isset($feedbacks['email']) ? $feedbacks['email'] : ""; ?>
                 <?= isset($feedbacks['contact']) ? $feedbacks['contact'] : ""; ?>

@@ -65,6 +65,7 @@
         </div>
     </div>
     <div class="accueil-button">
+        
         <a class="btn" href="../views/contact.php">Je prends contact</a>
     </div>
 </div>

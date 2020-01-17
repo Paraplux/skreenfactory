@@ -37,6 +37,8 @@
             <img src="../resources/images/design.jpg" alt="">
         </article>
     </section>
+
+    <hr class="yellow">
     
     <div class="expertises-button">
         <a class="btn" href="../views/contact.php">Je prends contact</a>
