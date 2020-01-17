@@ -20,7 +20,7 @@ const debounce = function(callback, delay){
 const navbar = document.querySelector(".navbar");
 const navbarLogo = document.querySelector(".navbar .logo");
 let lastScrollTop = 0
-window.addEventListener('scroll', debounce(function() {
+window.addEventListener("scroll", debounce(function() {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     if(window.pageYOffset <= 150) {
         //Barre proche du haut de la page
@@ -63,7 +63,7 @@ siteCache.addEventListener("click", function(e) {
 
 document.querySelectorAll(".footer .icons").forEach(function(element){
     element.addEventListener("mouseenter", function(e){
-        var path = this.querySelector("object").getSVGDocument().querySelectorAll('path');
+        var path = this.querySelector("object").getSVGDocument().querySelectorAll("path");
         path.forEach(function(eachPath){
             eachPath.setAttribute("fill", "#FFCC00")
             eachPath.style.cursor = "pointer";
@@ -72,7 +72,7 @@ document.querySelectorAll(".footer .icons").forEach(function(element){
 })
 document.querySelectorAll(".footer .icons").forEach(function(element){
     element.addEventListener("mouseleave", function(e){
-        var path = this.querySelector("object").getSVGDocument().querySelectorAll('path');
+        var path = this.querySelector("object").getSVGDocument().querySelectorAll("path");
         path.forEach(function(eachPath){
             eachPath.setAttribute("fill", "#808080")
         })
@@ -90,7 +90,7 @@ const dynamicPlaceholders = function(className) {
     inputs.forEach(function (elem) {
         elem.addEventListener("focus", function () {
             const placeholder = this.parentElement.lastElementChild;
-            placeholder.classList.add('active');
+            placeholder.classList.add("active");
         });
     });
     inputs.forEach(function (elem) {
