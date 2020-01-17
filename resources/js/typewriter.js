@@ -2,7 +2,7 @@
 
 /*Create a div with a specific class*/
 function createDivWithClass(className) {
-    const div = document.createElement("div")
+    const div = document.createElement("div");
     div.setAttribute("class", className);
     return div;
 }
@@ -34,8 +34,8 @@ function typewritter (speed) {
         //Creating the div.word
         let wordDiv = createDivWithClass("word");
         //Insert the word in the div.word
-        typewriterContainer.appendChild(wordDiv).innerHTML = word;
-    })
+        typewriterContainer.appendChild(wordDiv).textContent = word;
+    });
 
     //Creating div.letter for each cut word 
     document.querySelectorAll(".word").forEach(function (parent) {
@@ -46,9 +46,9 @@ function typewritter (speed) {
         //Putting each letter in div.letter in each div.word
         letters.forEach(function (child) {
             //Creating the div.letter
-            letterDiv = createDivWithClass("letter");
+            let letterDiv = createDivWithClass("letter");
             //Insert the letter in the div.letter
-            parent.appendChild(letterDiv).innerHTML = child;
+            parent.appendChild(letterDiv).textContent = child;
         });
     });
 
@@ -70,9 +70,9 @@ function typewritter (speed) {
         setTimeout(() => {
             letter.style.borderRight = "4px solid transparent";
         }, speed * (index + 1));
-    })
+    });
     setTimeout(() => {
-        document.querySelector(".word:last-of-type").style.animationPlayState = "running"
+        document.querySelector(".word:last-of-type").style.animationPlayState = "running";
     }, speed * document.querySelectorAll(".letter").length);
 }
 

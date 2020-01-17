@@ -101,6 +101,6 @@ const dynamicPlaceholders = function(className) {
             }
         });
     });
-}
+};
 
 dynamicPlaceholders(".placeholder");
