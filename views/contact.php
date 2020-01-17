@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $feedbacks = isset($_SESSION['feedbacks']) ? $_SESSION['feedbacks'] : "";
 $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : "";
 
-require_once('../components/header.php'); ?>
+require_once '../components/header.php'; ?>
         
 <div class="contact-page">
     <div class="contact-header">
@@ -59,7 +59,7 @@ require_once('../components/header.php'); ?>
 </div>
 
 
-<?php require_once('../components/footer.php'); 
+<?php require_once '../components/footer.php'; 
 
 unset($_SESSION['feedbacks']);
 unset($_SESSION['errors']);

@@ -1,4 +1,4 @@
-<?php require_once('../components/header.php'); ?>
+<?php require_once '../components/header.php'; ?>
         
 <div class="travaux-page">
     <div class="travaux-header">
@@ -24,4 +24,4 @@
 </div>
 
 
-<?php require_once('../components/footer.php'); ?>
+<?php require_once '../components/footer.php'; ?>

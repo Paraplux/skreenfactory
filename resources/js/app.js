@@ -13,8 +13,8 @@ const debounce = function(callback, delay){
         timer = setTimeout(function(){
             callback.apply(context, args);
         }, delay);
-    }
-}
+    };
+};
 
 
 const navbar = document.querySelector(".navbar");
