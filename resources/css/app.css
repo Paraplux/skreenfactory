@@ -55,7 +55,7 @@ hr.yellow {
 /* ANCHOR SECTIONS STYLE */
 
 .home-page {
-    background: url("../images/background.jpg") no-repeat center center fixed; 
+    background: url("https://cdn.pixabay.com/photo/2016/03/27/19/00/coffee-1283672_960_720.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -487,7 +487,7 @@ hr.yellow {
 /* ANCHOR EXPERTISES */
 
 .expertises-header  {
-    background: url("../images/background.jpg") no-repeat bottom center fixed; 
+    background: url("https://cdn.pixabay.com/photo/2016/08/02/11/13/graphic-design-studio-1563080_960_720.jpg") no-repeat bottom center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -530,7 +530,7 @@ hr.yellow {
 /* ANCHOR TRAVAUX */
 
 .travaux-header  {
-    background: url("../images/background.jpg") no-repeat bottom center fixed; 
+    background: url("https://cdn.pixabay.com/photo/2014/05/03/00/45/computer-336628_960_720.jpg") no-repeat bottom center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -578,7 +578,7 @@ hr.yellow {
 /* ANCHOR CONTACT&TARIFS */
 
 .contact-header  {
-    background: url("../images/background.jpg") no-repeat bottom center fixed; 
+    background: url("https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_960_720.jpg") no-repeat bottom center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -734,12 +734,12 @@ hr.yellow {
 
 @media screen and (min-width:1000px) and (min-resolution: 1dppx) {
     html {
-        font-size: 150%;
+        font-size: 130%;
     }
 }
 @media screen and (min-width:1000px) and (min-resolution: 1.25dppx) {
     html {
-        font-size: 125%;
+        font-size: 115%;
     }
 }
 @media screen and (min-width:1000px) and (min-resolution: 1.5dppx) {

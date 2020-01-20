@@ -17,10 +17,7 @@
     <section class="blockquotes">
         <article class="thumb">
             <span>Communication</span>
-            <video autoplay="true" loop="true">
-                <source src="../resources/videos/typing.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+            <img src="https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg" alt="">
         </article>
         <article class="quote right">
             <div class="arrow-left"></div>
@@ -34,7 +31,7 @@
         </article>
         <article class="thumb">
             <span>SEO</span>
-            <img src="../resources/images/design.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_960_720.jpg" alt="">
         </article>
     </section>
 

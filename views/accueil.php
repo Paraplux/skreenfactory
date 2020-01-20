@@ -22,7 +22,7 @@
             <p><span class="quote-symbole">&ldquo;</span>Le design au <strong>coeur</strong> du travail. Que vous fassiez le choix d'un design standard ou de suivre un cahier des charges <strong>précis</strong>, la qualité et le <strong>sérieux</strong> mèneront votre projet sur tous les écrans<span class="quote-symbole">&bdquo;</span></p>
         </article>
         <article class="thumb">
-            <img src="../resources/images/design.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg" alt="">
         </article>
     </section>
 
